@@ -1,19 +1,18 @@
-/////////////////////////////////////////////// /* Imports */ //////////////////////////////////////////////////////////
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-/////////////////////////////////////////////// /* Initialize */ //////////////////////////////////////////////////////////
+/* Initialize */
 const Schema = mongoose.Schema;
 
-/////////////////////////////////////////////// /* Article Schema */ //////////////////////////////////////////////////////////
+/* Article Schema */
 const articleSchema = new Schema({
-  title: {type: String, require: true},
-  image: {type: String, require: true},
+  title: { type: String, require: true },
+  image: { type: String, require: true },
   date: { type: Date, default: Date.now },
-  url: {type: String, require: true},
-  articleId: {type: String, require: true},
+  url: { type: String, require: true },
+  articleId: { type: String, require: true }
 });
 
-const Article = mongoose.model("Article", articleSchema); // This creates our model from the above schema, using mongoose's model method
+const Article = mongoose.model('Article', articleSchema); // This creates our model from the above schema, using mongoose's model method
 
-/////////////////////////////////////////////// /* Export */ //////////////////////////////////////////////////////////
+/* Export */
 module.exports = Article;
