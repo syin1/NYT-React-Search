@@ -53,7 +53,7 @@ export default class SearchForm extends Component {
       <React.Fragment>
         <div className="col s12 m12 l6">
           <div className="card-panel">
-            <h2 className="header center">Search for an Article</h2>
+            <h2 className="header center">What is on your mind?</h2>
             <div className="row">
               <form className="col s12" onSubmit={this.handleSubmit}>
                 <div className="row">
@@ -171,11 +171,11 @@ export default class SearchForm extends Component {
                       </div>
                     ) : (
                       <button
-                        className="btn cyan waves-effect waves-light right"
+                        className="btn cyan waves-effect waves-light right pulse"
                         type="submit"
                         name="action"
                       >
-                        Submit
+                        Search
                         <i className="mdi-content-send right" />
                       </button>
                     )}
