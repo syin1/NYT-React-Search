@@ -10,11 +10,8 @@
 
 ### How It Works
 
-- Go to the app's home page at https://syin1.github.io/ReactMemoryGame/.
-- The application will render different playing cards to the screen.
-- The user should then click on individual cards to gain points. The user's score will be incremented when clicking an image for the first time.
-- The user's score should be reset to 0 if they click the same image more than once.
-- Every time an image is clicked, the images rendered to the page will shuffle themselves in a random order.
-- Once the user's score is reset after an incorrect guess, the game will restart.
+- Go to the app's home page at https://mynytscraper.herokuapp.com/.
+- Users are able to query the New York Times based on topic and date. It displays the results in a rendered list with the article title, publication date, id, and allows the user to visit an article's url or save the article to the MongoDB.
+- When users hit the "Saved" button, it renders articles that are saved in the MongoDB and allows the user to visit the article's url or delete it from the MongoDB.
 
 ---
